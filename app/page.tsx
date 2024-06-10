@@ -7,6 +7,7 @@ export default async function Home() {
   return (
     <main className="p-24">
       <h1>CodingWorld</h1>
+      <span>{user?.user?.email}</span>
       <h2>A community for coders</h2>
     </main>
   );
