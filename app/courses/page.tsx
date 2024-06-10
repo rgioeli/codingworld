@@ -3,8 +3,7 @@ import Link from "next/link";
 const CoursePage = () => {
   return (
     <div>
-      <h1>Courses</h1>
-      <Link href="/courses/rgioeli">See Courses</Link>
+      <h1>Ok?</h1>
     </div>
   );
 };
