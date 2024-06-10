@@ -2,7 +2,8 @@ import { Session, getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/authOptions";
 
 export default async function Home() {
-  console.log("NOT CHECKING");
+  const user = (await getServerSession(authOptions)) as Session;
+  console.log(user);
   return (
     <main className="p-24">
       <h1>CodingWorld</h1>
